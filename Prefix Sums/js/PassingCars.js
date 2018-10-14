@@ -15,3 +15,20 @@ function solution(A){
    return len - count;
 }
 
+//score 100
+function solution(A){
+    let East = 0;
+    let West = 0;
+    for(let i = 0 , len = A.length; i < len ; i ++){
+        if(A[i] == 0) East++;
+        if(East > 0){
+            if(A[i] == 1){
+                West += East;
+            }
+            if(West > 1000000000){
+                return -1;
+            }
+        }
+    }
+    return West;
+} 
