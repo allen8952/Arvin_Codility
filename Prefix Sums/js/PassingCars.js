@@ -16,6 +16,8 @@ function solution(A){
 }
 
 //score 100
+//假使 當下是往西 就要加上，前面有幾次是通過Ａ的次數
+//可以過濾掉 P < Q 的數值
 function solution(A){
     let East = 0;
     let West = 0;
